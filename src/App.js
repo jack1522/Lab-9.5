@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import { useState } from "react";
 import "./App.css";
 
 const favBooks = [
@@ -41,11 +40,9 @@ const favBooks = [
 ];
 
 function ChooseBook() {
-  const [randomNum, setRandNum] = useState(0);
-
   function setNum() {
     const bookNum = Math.floor(Math.random() * 5) + 1;
-    setRandNum(bookNum);
+
     alert(
       `Book Genie suggests that you start with book #${bookNum} from the list of books below.`
     );
